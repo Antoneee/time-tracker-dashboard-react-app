@@ -1,0 +1,90 @@
+.time-tracker__container {
+  position: absolute;
+  bottom: 0;
+  background-color: #1c1f4a;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+  padding: 2rem 2rem;
+  transition: all 0.2s;
+}
+
+.time-tracker__container:hover {
+  background-color: #2f3263;
+}
+
+.time-tracker__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+
+.ellipsis-icon {
+  fill: #bbc0ff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ellipsis-icon:hover,
+.ellipsis-icon:active {
+  fill: #fff;
+}
+
+.time-tracker__header h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.time-tracker__hours {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+.time-tracker__last-week {
+  color: #bdc1ff;
+  font: 0.8rem;
+}
+
+@media (max-width: 38em) {
+  .time-tracker__header h3 {
+    font-size: 1.8rem;
+  }
+
+  .time-tracker__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .time-tracker__last-week {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 29em) {
+  .time-tracker__header {
+    margin-bottom: 0.8rem;
+  }
+  .time-tracker__header h3 {
+    font-size: 1.4rem;
+  }
+
+  .time-tracker__hours {
+    font-size: 2.6rem;
+    margin-bottom: 0;
+  }
+
+  .time-tracker__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .time-tracker__last-week {
+    font-size: 0.9rem;
+  }
+}
